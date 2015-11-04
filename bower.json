@@ -1,0 +1,22 @@
+{
+  "name": "w20-dataviz",
+  "version": "2.1.0-M1",
+  "ignore": [
+    ".*",
+    "*.iml",
+    "specs",
+    "mocks",
+    "samples",
+    "bower_components",
+    "coverage",
+    "node_modules",
+    "gruntfile.js",
+    "karma.conf.js",
+    "package.json",
+    "test-main.js"
+  ],
+  "dependencies": {
+    "nvd3": "1.8.1",
+    "w20": "~2.1"
+  }
+}
