@@ -1,6 +1,6 @@
 {
   "name": "w20-dataviz",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "ignore": [
     ".*",
     "*.iml",
@@ -16,7 +16,7 @@
     "test-main.js"
   ],
   "dependencies": {
-    "nvd3": "1.8.1",
-    "w20": "~2.1"
+    "nvd3": "^1.8.1",
+    "w20": "^2.2"
   }
 }
