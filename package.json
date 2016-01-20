@@ -1,7 +1,7 @@
 {
   "name": "w20",
-  "version": "2.2.0",
-  "description": "SeedStack Web framework",
+  "version": "2.1.1",
+  "description": "W20 data vizualisation add-on providing charts",
   "license": "MPL 2.0",
   "contributors": [
     {
@@ -11,9 +11,6 @@
     {
       "name": "Kavi RAMYEAD",
       "email": "kavi.ramyead@ext.mpsa.com"
-    },
-    {
-      "name": "Laurent DIDIER"
     }
   ],
   "devDependencies": {
