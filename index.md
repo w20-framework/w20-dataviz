@@ -1,11 +1,20 @@
 ---
-title: "Overview"
-addon: "W20 Dataviz"
+title: "Basics"
+name: "W20 dataviz"
 repo: "https://github.com/seedstack/w20-dataviz"
 author: "SeedStack"
 description: "Provides supports for charts and graphical representation"
 min-version: "15.11+"
 frontend: "responsive"
+weight: -1
+tags:
+    - "frontend"
+    - "w20"
+    - "chart"
+    - "data"
+    - "visualization"
+zones:
+    - Addons
 menu:
     W20Dataviz:
         weight: 10
