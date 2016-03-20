@@ -16,7 +16,7 @@
     "test-main.js"
   ],
   "dependencies": {
-    "nvd3": "^1.8.1",
-    "w20": "^2.2.0"
+    "nvd3": "^1.8.2",
+    "w20": "#master"
   }
 }
