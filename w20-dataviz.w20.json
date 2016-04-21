@@ -4,6 +4,14 @@
     "description":"W20 data visualization components (charts, ...)",
 
     "modules" : {
+        "dygraphs": {
+          "path" : "{w20-dataviz}/modules/dygraphs",
+          "configSchema": {
+            "title": "Dygraphs chart",
+            "type": "object",
+            "additionalProperties": false
+          }
+        },
         "bullet" : {
             "path" : "{w20-dataviz}/modules/charts/bullet",
             "configSchema": {
@@ -104,11 +112,16 @@
 
     "requireConfig" : {
         "paths": {
+            "{dygraphs}": "${components-path:bower_components}/dygraphs",
             "{d3}": "${components-path:bower_components}/d3",
             "{nvd3}": "${components-path:bower_components}/nvd3/build"
         },
 
         "shim" : {
+              "{dygraphs}/dygraph-combined": {
+                "exports": "Dygraph",
+                "deps": ["jquery"]
+              },
               "{d3}/d3": {
                    "exports": "d3"
               },
