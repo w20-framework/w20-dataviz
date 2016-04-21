@@ -76,5 +76,5 @@ module.exports = function (grunt) {
 
     grunt.registerTask('docs', ['ngdocs', 'connect:docs']);
 
-    grunt.registerTask('default', ['jshint', 'bower', 'ngdocs']);
+    grunt.registerTask('default', ['jshint', 'bower', 'karma:test', 'ngdocs']);
 };
