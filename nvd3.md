@@ -15,6 +15,11 @@ menu:
         weight: 10
 ---
 
+# Nvd3
+
+[Nvd3](http://nvd3.org/) is a data visualization library build on top of the popular [d3](https://d3js.org/) library. It offers several chart types for
+common visualization needs. The web framework add an AngularJS integration in the form of directives, along with sensible defaults for these different charts.
+
 # Multibar
 
 The multibar chart is used to compare different series in a bar representation following the X axis.
