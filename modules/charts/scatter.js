@@ -310,19 +310,9 @@ define([
                                     height = scope.config.height;
                                 var chart = nv.models.scatterChart()
                                     .margin(margin)
-                                    .tooltipXContent(scope.$eval(scope.config.tooltipXContent) || function (key, x) {
-                                        return '<strong>' + x + '</strong>';
-                                    })
-                                    .tooltipYContent(scope.$eval(scope.config.tooltipYContent) || function (key, x, y) {
-                                        return '<strong>' + y + '</strong>';
-                                    })
-                                    .showControls(scope.config.showControls === undefined ? false : scope.config.showControls)
                                     .showLegend(scope.config.showLegend === undefined ? true : scope.config.showLegend)
                                     .showDistX(scope.config.showDistX === undefined ? true : scope.config.showDistX)
                                     .showDistY(scope.config.showDistY === undefined ? true : scope.config.showDistY)
-                                    .xPadding(scope.config.xPadding === undefined ? 0 : (+scope.config.xPadding))
-                                    .yPadding(scope.config.yPadding === undefined ? 0 : (+scope.config.yPadding))
-                                    .fisheye(scope.config.fishEye === undefined ? 0 : (+scope.config.fishEye))
                                     .noData(scope.config.noData === undefined ? 'No Data Available.' : scope.config.noData)
                                     .color(d3.scale.category10().range());
 
