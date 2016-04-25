@@ -2,9 +2,9 @@
 title: "Basics"
 name: "W20 dataviz"
 repo: "https://github.com/seedstack/w20-dataviz"
-author: "SeedStack"
-description: "Provides supports for charts and graphical representation"
-min-version: "15.11+"
+date: 2016-01-20
+author: Kavi RAMYEAD
+description: "Provides data visualization features like charts."
 frontend: "responsive"
 weight: -1
 tags:
