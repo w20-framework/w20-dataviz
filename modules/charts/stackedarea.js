@@ -266,10 +266,6 @@ define([
                                     } : scope.config.y())
                                     .forceX(scope.config.forceX === undefined ? [] : scope.$eval(scope.config.forceX)) // List of numbers to Force into the X scale (ie. 0, or a max / min, etc.)
                                     .forceY(scope.config.forceY === undefined ? [0] : scope.$eval(scope.config.forceY)) // List of numbers to Force into the Y scale
-                                    .size(scope.config.size === undefined ? function (d) {
-                                        return d.size || 1;
-                                    } : scope.config.size())
-                                    .forceSize(scope.config.forceSize === undefined ? [] : scope.$eval(scope.config.forceSize)) // List of numbers to Force into the Size scale
                                     .width(width)
                                     .height(height)
                                     .showLegend(scope.config.showLegend === undefined ? false : scope.config.showLegend)
