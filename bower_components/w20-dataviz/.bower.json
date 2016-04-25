@@ -1,0 +1,35 @@
+{
+  "name": "w20-dataviz",
+  "ignore": [
+    ".*",
+    "*.iml",
+    "specs",
+    "mocks",
+    "samples",
+    "bower_components",
+    "coverage",
+    "node_modules",
+    "gruntfile.js",
+    "karma.conf.js",
+    "package.json",
+    "test-main.js"
+  ],
+  "dependencies": {
+    "nvd3": "~1.8.2",
+    "w20": "#master",
+    "dygraphs": "^1.1.1"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.4.8"
+  },
+  "homepage": "https://github.com/seedstack/w20-dataviz",
+  "_release": "6618caa713",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "6618caa713c00fd817634a8f0068077ab61f412d"
+  },
+  "_source": "https://github.com/seedstack/w20-dataviz.git",
+  "_target": "master",
+  "_originalSource": "w20-dataviz"
+}

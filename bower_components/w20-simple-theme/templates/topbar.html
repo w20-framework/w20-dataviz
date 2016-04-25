@@ -1,0 +1,54 @@
+<div>
+    <div class="w20-topbar" data-ng-if="isTopbarDisplayed()">
+        <div class="navbar navbar-default navbar-fixed-top" data-role="navigation">
+            <div class="container-full">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="navbar-brand">
+                        <span class="label w20-environment-label environment-{{ envtype | lowercase }}" data-ng-hide="(envtype | uppercase).indexOf('PROD') == 0">{{ ('w20.menu.env.' + (envtype | lowercase)) | localize }}</span>
+                        <a data-ng-href="{{ linkPrefix + '/' }}"><span data-ng-bind="{{ title }}"></span></a>
+                        <span class="subbrand" data-ng-bind="{{ description }}"></span>
+                    </div>
+                </div>
+
+                <div class="collapse navbar-collapse navbar-responsive-collapse">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li data-ng-if="!hideViews">
+                            <a id="views-dropdown" role="button" data-toggle="dropdown" class="w20-menu-item" data-target="#">
+                                <i class="fa fa-th-list"></i> {{ 'w20.menu.sidebar.views' | localize }} <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+                                <li><a data-ng-href="{{ linkPrefix + '/' }}"><i class="fa fa-home"></i> {{ 'w20.menu.sidebar.home' | localize }}</a></li>
+                                <li class="divider"></li>
+                                <li data-ng-repeat="route in topLevelRoutes()"><a data-ng-href="{{ linkPrefix + route.path }}" data-ng-bind-html="displayName(route)"></a></li>
+                                <li class="dropdown-submenu" data-ng-repeat="category in routeCategories()">
+                                    <a href="#">{{ ('application.viewcategory.' + category) | localize }}</a>
+                                    <ul class="dropdown-menu">
+                                        <li data-ng-repeat="route in routesFromCategory(category) | orderBy:routeSortKey"><a data-ng-href="{{ linkPrefix + route.path }}" data-ng-bind-html="displayName(route)"></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li data-ng-repeat="navActionName in navActions()"
+                            data-ng-include="navAction(navActionName).templateUrl | path"
+                            data-w20-include-replace
+                            data-ng-if="navAction(navActionName).showFn()"
+                            data-ng-init="action = navAction(navActionName)">
+                        </li>
+                    </ul>
+                    <div class="logo" data-ng-if="logo.image">
+                        <span class="logo-helper"></span>
+                        <a data-ng-href="{{ logo.link }}" data-uib-tooltip="{{ logo.tooltip || logo.link  || '' }}" data-tooltip-placement="left" target="{{ logo.target || '_self' }}">
+                            <img data-ng-src="{{ logo.image }}" alt="logo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

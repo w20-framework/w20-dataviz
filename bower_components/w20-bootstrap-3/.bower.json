@@ -1,0 +1,33 @@
+{
+  "name": "w20-bootstrap-3",
+  "ignore": [
+    ".*",
+    "*.iml",
+    "specs",
+    "mocks",
+    "samples",
+    "bower_components",
+    "coverage",
+    "node_modules",
+    "gruntfile.js",
+    "karma.conf.js",
+    "package.json",
+    "test-main.js"
+  ],
+  "dependencies": {
+    "angular-bootstrap": "~1.2.5",
+    "bootstrap": "~3.3.6",
+    "font-awesome": "~4.5.0",
+    "w20": "#master"
+  },
+  "homepage": "https://github.com/seedstack/w20-bootstrap-3",
+  "_release": "dcc4a15dd3",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "dcc4a15dd3d8d42d974084e50dc78f67ea2b2a0c"
+  },
+  "_source": "https://github.com/seedstack/w20-bootstrap-3.git",
+  "_target": "master",
+  "_originalSource": "w20-bootstrap-3"
+}

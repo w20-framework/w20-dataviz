@@ -1,0 +1,90 @@
+{
+    "id": "w20-simple-theme",
+    "name": "W20 simple theme",
+    "type": "theme",
+
+    "modules": {
+        "main": {
+            "path": "{w20-simple-theme}/modules/main",
+            "autoload": true,
+            "configSchema": {
+                "title": "Simple theme configuration",
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                    "logo": {
+                        "title": "Logo definition",
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                            "image": {
+                                "description": "The URL of the image",
+                                "type": "string"
+                            },
+                            "link": {
+                                "description": "The URL of the logo link",
+                                "type": "string"
+                            },
+                            "tooltip": {
+                                "description": "The text of the logo tooltip",
+                                "type": "string"
+                            },
+                            "target": {
+                                "description": "The target for the logo link",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "categories": {
+                        "description": "Ordered array of displayed menu categories",
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "hideViews": {
+                        "description": "Hide the views section",
+                        "type": "boolean"
+                    },
+                    "routes": {
+                        "description": "Routes to show directly in the top bar",
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "hideConnectivity": {
+                        "description": "Hide the connectivity indicator",
+                        "type": "boolean"
+                    },
+                    "hideCulture": {
+                        "description": "Hide the culture chooser",
+                        "type": "boolean"
+                    },
+                    "hideSecurity": {
+                        "description": "Hide the security status",
+                        "type": "boolean"
+                    }
+                }
+            }
+        },
+        "style": {
+            "path": "[css]!{w20-simple-theme}/style/style",
+            "autoload": true
+        }
+    },
+
+    "i18n": {
+        "en" : [ "{w20-simple-theme}/i18n/messages-en.json" ],
+        "fr" : [ "{w20-simple-theme}/i18n/messages-fr.json" ]
+    },
+
+    "requireConfig": {
+        "shim": {
+            "{w20-simple-theme}/w20-simple-theme.min": [
+                "{w20-ui}/w20-ui.min",
+                "{w20-core}/w20-core.min"
+            ]
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "w20-simple-theme",
+  "ignore": [
+    ".*",
+    "*.iml",
+    "*.md",
+    "bower_components",
+    "coverage",
+    "node_modules",
+    "gruntfile.js",
+    "package.json"
+  ],
+  "dependencies": {
+    "w20": "#master",
+    "w20-bootstrap-3": "#master"
+  },
+  "homepage": "https://github.com/seedstack/w20-simple-theme",
+  "_release": "f4601269c0",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "f4601269c0d658bef73e46c73e6821dbabf70ffe"
+  },
+  "_source": "https://github.com/seedstack/w20-simple-theme.git",
+  "_target": "master",
+  "_originalSource": "w20-simple-theme"
+}

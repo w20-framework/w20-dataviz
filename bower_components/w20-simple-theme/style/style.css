@@ -1,0 +1,156 @@
+/*
+ * Copyright (c) 2013-2016, The SeedStack authors <http://seedstack.org>
+ *
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ */
+
+.navbar-left li {
+    cursor: pointer;
+}
+
+.logo {
+    float: right;
+    margin-right: 20px;
+    height: 50px;
+}
+
+.logo .logo-helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.logo img {
+    vertical-align: middle;
+}
+
+.navbar-brand > .w20-environment-label {
+    padding: 2px;
+}
+
+.w20-environment-label.environment-dev {
+    background-color: #FF0000;
+}
+
+.w20-environment-label.environment-preprod {
+    background-color: #FFB10A;
+}
+
+.w20-environment-label.environment-test {
+    background-color: #73a0ff;
+}
+
+.w20-environment-label.environment-prod {
+    background-color: #00CC00;
+}
+
+.w20-connectivity-online {
+    font-size: 16px;
+    color: #01df01;
+}
+
+.w20-connectivity-unknown {
+    font-size: 16px;
+    color: #ffbf00;
+}
+
+.w20-connectivity-offline {
+    font-size: 16px;
+    color: #df0101;
+}
+
+.w20-menu-item {
+    cursor: pointer;
+}
+
+.w20-sidebar {
+    display: none;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 4px 4px 4px;
+    -moz-border-radius: 0 4px 4px;
+    border-radius: 0 4px 4px 4px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 4px 0 4px 4px;
+    -moz-border-radius: 4px 0 4px 4px;
+    border-radius: 4px 0 4px 4px;
+}
+
+@media (max-width: 979px) {
+    .content-shift-topbar {
+        padding-top: 0;
+    }
+
+    .navbar .w20-actions {
+        font-size: x-small !important;
+    }
+
+    #w20-menu-topbar-section-views {
+        font-size: x-small !important;
+    }
+
+    .navbar .subbrand {
+        font-size: x-small !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar .w20-actions {
+        font-size: inherit !important;
+    }
+
+    #w20-menu-topbar-section-views {
+        display: none;
+    }
+
+    .navbar .subbrand {
+        font-size: inherit !important;
+    }
+
+    #w20-menu-topbar-section-views-collapse {
+        display: block !important;
+        top: 0;
+        border: none;
+    }
+}

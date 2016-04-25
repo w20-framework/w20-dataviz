@@ -1,0 +1,8 @@
+{
+    "w20.menu.env.test" : "Test",
+    "w20.menu.env.dev" : "Development",
+    "w20.menu.env.preprod" : "Preproduction",
+    "w20.menu.env.prod" : "Production",
+    "w20.menu.sidebar.home" : "Home",
+    "w20.menu.sidebar.views" : "Views"
+}
