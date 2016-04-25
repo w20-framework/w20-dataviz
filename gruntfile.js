@@ -11,18 +11,9 @@ module.exports = function (grunt) {
     'use strict';
 
     grunt.initConfig({
-        pkg: grunt.file.readJSON('package.json'),
         clean: [
-            'bower_components/**',
-            'docs/**',
-            'dist/**',
-            'coverage/**'
+            'bower_components/**'
         ],
-        jshint: {
-            dataviz: {
-                src: ['modules/**/*.js']
-            }
-        },
         bower: {
             install: {
                 options: {
@@ -30,51 +21,20 @@ module.exports = function (grunt) {
                 }
             }
         },
-        karma: {
-            test: {
-                configFile: 'karma.conf.js',
-                singleRun: true
-            },
-            watch: {
-                configFile: 'karma.conf.js',
-                autoWatch: true
-            }
-        },
-        coveralls: {
-            src: ['coverage/lcov.info'],
-            options: {
-                force: true
-            }
-        },
-        ngdocs: {
-            dataviz: {
-                src: ['modules/**/*.js', 'index.ngdoc'],
-                title: 'Dataviz',
-                api: true
-            }
-        },
         connect: {
-            docs: {
+            server: {
                 options: {
-                    port: 9000,
-                    base: 'docs',
+                    port: grunt.option('port') || 9999,
+                    base: '.',
                     keepalive: true
                 }
             }
         }
     });
 
-    grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-clean');
-    grunt.loadNpmTasks('grunt-contrib-concat');
-    grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-ngdocs');
-    grunt.loadNpmTasks('grunt-karma');
-    grunt.loadNpmTasks('grunt-coveralls');
     grunt.loadNpmTasks('grunt-bower-task');
     grunt.loadNpmTasks('grunt-contrib-connect');
 
-    grunt.registerTask('docs', ['ngdocs', 'connect:docs']);
-
-    grunt.registerTask('default', ['jshint', 'bower', 'karma:test', 'ngdocs']);
+    grunt.registerTask('default', ['clean', 'bower']);
 };

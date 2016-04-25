@@ -1,3 +1,4 @@
+
 sudo: false
 
 language: node_js
@@ -7,6 +8,9 @@ node_js:
 
 install: 
   - npm install -g grunt-cli
-  - npm install
+  - npm install grunt grunt-contrib-clean grunt-bower-task
 
 script: grunt
+
+after_success:
+  - "[[ $TRAVIS_PULL_REQUEST == \"false\" && $TRAVIS_BRANCH == \"demo\" ]] && chmod +x deploy_ghpages.sh && ./deploy_ghpages.sh"

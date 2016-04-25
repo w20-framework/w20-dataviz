@@ -1,0 +1,68 @@
+{
+  "id": "w20-dataviz-demo",
+  "name": "W20 business Theme Demo",
+
+  "modules": {
+    "demo": {
+      "path": "{w20-dataviz-demo}/modules/demo",
+      "autoload": true
+    }
+  },
+
+  "routes": {
+    "home":{
+      "label": "Home",
+      "templateUrl":"{w20-dataviz-demo}/views/home.html"
+    },
+    "nvd3-multibar":{
+      "label": "Nvd3 multibar",
+      "templateUrl":"{w20-dataviz-demo}/views/nvd3-multibar.html",
+      "controller":"DemoController as $ctrl"
+    },
+    "nvd3-pie":{
+      "label": "Nvd3 pie",
+      "templateUrl":"{w20-dataviz-demo}/views/nvd3-pie.html",
+      "controller":"DemoController as $ctrl"
+    },
+    "nvd3-scatter":{
+      "label": "Nvd3 scatter",
+      "templateUrl":"{w20-dataviz-demo}/views/nvd3-scatter.html",
+      "controller":"DemoController as $ctrl"
+    },
+    "nvd3-discrete-bar":{
+      "label": "Nvd3 discrete bar",
+      "templateUrl":"{w20-dataviz-demo}/views/nvd3-discrete-bar.html",
+      "controller":"DemoController as $ctrl"
+    },
+    "nvd3-line-with-focus":{
+      "label": "Nvd3 line with focus",
+      "templateUrl":"{w20-dataviz-demo}/views/nvd3-line-with-focus.html",
+      "controller":"DemoController as $ctrl"
+    },
+    "nvd3-stacked-area":{
+      "label": "Nvd3 stacked area",
+      "templateUrl":"{w20-dataviz-demo}/views/nvd3-stacked-area.html",
+      "controller":"DemoController as $ctrl"
+    },
+    "nvd3-multibar-horizontal":{
+      "label": "Nvd3 multibar horizontal",
+      "templateUrl":"{w20-dataviz-demo}/views/nvd3-multibar-horizontal.html",
+      "controller":"DemoController as $ctrl"
+    },
+    "nvd3-line":{
+      "label": "Nvd3 line",
+      "templateUrl":"{w20-dataviz-demo}/views/nvd3-line.html",
+      "controller":"DemoController as $ctrl"
+    },
+    "nvd3-line-plus-bar":{
+      "label": "Nvd3 line plus bar",
+      "templateUrl":"{w20-dataviz-demo}/views/nvd3-line-plus-bar.html",
+      "controller":"DemoController as $ctrl"
+    },
+    "dygraphs":{
+      "label": "Dygraphs",
+      "templateUrl":"{w20-dataviz-demo}/views/dygraphs.html",
+      "controller":"DemoController as $ctrl"
+    }
+  }
+}
