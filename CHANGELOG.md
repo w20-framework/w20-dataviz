@@ -1,6 +1,7 @@
-# Version 2.1.2 (?)
+# Version 2.2.0 (2016-04-27)
 
-* [chg] Update for SeedStack 16.4
+* [new] Add interactive and zoomable charts based on [Dygraphs](http://dygraphs.com/).
+* [chg] Update for SeedStack 16.4.
 
 # Version 2.1.1 (2016-01-21)
 
