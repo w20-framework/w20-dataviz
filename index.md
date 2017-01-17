@@ -28,20 +28,9 @@ the [Dygraphs](http://dygraphs.com/) chart library for large data sets.
 
 ## Installation
 
-You can install this addon through bower if you are developing a stand alone front end or you can use the W20 integration bridge
-to serve the required dependencies through dedicated JARs.
-
 ```
 bower install w20-dataviz
 ```
-
-## Using the [W20 bridge addon](http://seedstack.org/addons/w20-bridge/)
-
-If the frontend files are served from resource JARs, the W20-bridge add-on packages this addon in the following artifact:
-
-{{< dependency g="org.seedstack.addons.w20" a="w20-bridge-web-dataviz" >}}
-
-Simply add it to your project `pom.xml`.
 
 ## Configuration
 
