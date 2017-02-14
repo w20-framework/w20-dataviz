@@ -23,7 +23,7 @@ The W20 integration provides an AngularJS directive augmented with an option to 
 
 ## Installation
 
-See the installation of the Dataviz addon in the [basics](/addons/w20-dataviz/) section
+See the installation of the Dataviz addon in the [basics]({{< ref "addons/w20-dataviz/index.md" >}}) section
 
 ## Configuration
 
