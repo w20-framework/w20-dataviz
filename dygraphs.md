@@ -19,6 +19,8 @@ menu:
 [Dygraphs](http://dygraphs.com/) is a fast charting library that allows users to explore large data sets. It plots data series as lines.
 The W20 integration provides an AngularJS directive augmented with an option to load down-sampled data while zooming.
 
+{{% button href="http://w20-framework.github.io/w20-dataviz" label="Live demo" %}}
+
 # Dygraphs
 
 ## Installation

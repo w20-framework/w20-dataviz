@@ -24,6 +24,8 @@ The W20 Dataviz addon provides supports for charts and graphical representation.
 [NVD3](http://nvd3.org/) charting library (which itself uses [D3](http://d3js.org/)) along with an integration of
 the [Dygraphs](http://dygraphs.com/) chart library for large data sets.
 
+{{% button href="http://w20-framework.github.io/w20-dataviz" label="Live demo" %}}
+
 # Dataviz addon
 
 ## Installation

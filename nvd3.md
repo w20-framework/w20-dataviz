@@ -20,7 +20,7 @@ menu:
 [Nvd3](http://nvd3.org/) is a data visualization library build on top of the popular [d3](https://d3js.org/) library. It offers several chart types for
 common visualization needs. The web framework add an AngularJS integration in the form of directives, along with sensible defaults for these different charts.
 
-{{% button href="http://seedstack.org/w20-dataviz" label="Live demo" %}}
+{{% button href="http://w20-framework.github.io/w20-dataviz" label="Live demo" %}}
 
 # Multibar
 
