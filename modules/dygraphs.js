@@ -1,7 +1,7 @@
 define([
     '{angular}/angular',
     'jquery',
-    '{dygraphs}/dygraph-combined',
+    '{dygraphs}/dygraph',
     '{angular-resource}/angular-resource'
 
 ], function (angular, $, Dygraph) {
@@ -149,7 +149,7 @@ define([
                     connectSeparatedPoints: true,
                     digitsAfterDecimal: 2,
                     labelsShowZeroValues: true,
-                    interactionModel: Dygraph.Interaction.defaultModel,
+                    interactionModel: Dygraph.defaultInteractionModel,
                     zoomCallback: zoomCallback
                 };
 
