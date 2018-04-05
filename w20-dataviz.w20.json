@@ -113,7 +113,7 @@
     "requireConfig" : {
         "paths": {
             "{dygraphs}": "${components-path:node_modules}/dygraphs/dist",
-            "{d3}": "${components-path:node_modules}/d3/build",
+            "{d3}": "${components-path:node_modules}/d3",
             "{nvd3}": "${components-path:node_modules}/nvd3/build"
         },
 
