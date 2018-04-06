@@ -19,7 +19,7 @@ for (var file in window.__karma__.files) {
 
 window.w20 = {
     configuration: {
-        '/base/bower_components/w20/w20-core.w20.json': {
+        '/base/node_modules/@w20/w20/w20-core.w20.json': {
             modules: {
                 application: {
                     id: 'w20-test',
@@ -27,7 +27,7 @@ window.w20 = {
                 }
             },
             vars: {
-                'components-path': '/base/bower_components'
+                'components-path': '/base/node_modules'
             }
         },
         'base/w20-dataviz.w20.json': {
@@ -35,7 +35,7 @@ window.w20 = {
                 dygraphs: {}
             },
             vars: {
-                'components-path': '/base/bower_components'
+                'components-path': '/base/node_modules'
             }
         }
     },
@@ -45,11 +45,11 @@ window.w20 = {
 
 requirejs.config({
     paths: {
-        '{angular-mocks}': '/base/bower_components/angular-mocks'
+        '{angular-mocks}': '/base/node_modules/angular-mocks'
     },
     shim: {
         '{angular-mocks}/angular-mocks': [ '{angular}/angular' ]
     }
 });
 
-requirejs([ '/base/bower_components/w20/modules/w20.js' ]);
+requirejs([ '/base/node_modules/@w20/w20/modules/w20.js' ]);

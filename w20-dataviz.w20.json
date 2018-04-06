@@ -112,13 +112,13 @@
 
     "requireConfig" : {
         "paths": {
-            "{dygraphs}": "${components-path:bower_components}/dygraphs",
-            "{d3}": "${components-path:bower_components}/d3",
-            "{nvd3}": "${components-path:bower_components}/nvd3/build"
+            "{dygraphs}": "${components-path:node_modules}/dygraphs/dist",
+            "{d3}": "${components-path:node_modules}/d3",
+            "{nvd3}": "${components-path:node_modules}/nvd3/build"
         },
 
         "shim" : {
-              "{dygraphs}/dygraph-combined": {
+              "{dygraphs}/dygraph": {
                 "exports": "Dygraph",
                 "deps": ["jquery"]
               },

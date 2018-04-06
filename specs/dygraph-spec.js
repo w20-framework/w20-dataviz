@@ -31,7 +31,10 @@ define([
                 [20070106, 55, 36],
                 [20070107, 62, 45]
             ];
-
+        var getTime = function (year, month, day){
+            var myDate = new Date(year, month - 1, day);
+            return myDate.getTime();
+        }
         beforeEach(function () {
             angular.mock.module('dygraphs');
 
@@ -93,11 +96,17 @@ define([
                 done('Date,High,Low\n20070102,62,44\n20070103,62,23\n20070104,57,26\n20070105,54,60');
             };
             $scope.$digest();
-            var originalParsedData = [[1167609600000, 62, 39], [1167696000000, 62, 44], [1167955200000, 54, 60], [1168041600000, 55, 36]];
+            var day1 = getTime(2007, 1, 1);
+            var day2 = getTime(2007, 1, 2);
+            var day3 = getTime(2007, 1, 3);
+            var day4 = getTime(2007, 1, 4);
+            var day5 = getTime(2007, 1, 5);
+            var day6 = getTime(2007, 1, 6);
+            var originalParsedData = [[day1, 62, 39], [day2, 62, 44], [day5, 54, 60], [day6, 55, 36]];
             expect($scope.reference.rawData_).toEqual(originalParsedData);
             $scope.reference.doZoomXDates_(1167747312000, 1168006512000);
             $scope.$digest();
-            var expectedMergedData = [[1167609600000, 62, 39], [1167696000000, 62, 44], [1167782400000, 62, 23], [1167868800000, 57, 26], [1167955200000, 54, 60], [1167955200000, 54, 60], [1168041600000, 55, 36]];
+            var expectedMergedData = [[day1, 62, 39], [day2, 62, 44], [day3, 62, 23], [day4, 57, 26], [day5, 54, 60], [day5, 54, 60], [day6, 55, 36]];
             expect($scope.reference.rawData_).toEqual(expectedMergedData);
         });
 
