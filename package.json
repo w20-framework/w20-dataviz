@@ -1,5 +1,5 @@
 {
-  "name": "w20-dataviz",
+  "name": "@w20/w20-dataviz",
   "version": "2.3.0",
   "description": "W20 data vizualisation add-on providing charts",
   "license": "MPL-2.0",
