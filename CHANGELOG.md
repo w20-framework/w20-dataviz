@@ -1,3 +1,7 @@
+# Version 2.3.0 (2018-05-06)
+
+* [brk] Switched from Bower to NPM package manager
+
 # Version 2.2.0 (2016-04-27)
 
 * [new] Add interactive and zoomable charts based on [Dygraphs](http://dygraphs.com/).
